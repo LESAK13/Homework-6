@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WEATHER DASHBOARD</h1>
+        <div class="row">
+            <div class="form-group col-3">
+                <label for="citySearch">Search for a City:</label>
+                <input type="text" class="form-control" id="cityInput" aria-describedby="search">
+                <br>
+                <button type="button" class="btn btn-success" id="searchBtn">Search</button>
+                <hr>
+                <div class="list-group hide" id="btnDiv">
+                   <ul id="btnList">
+                   </ul>
+                </div>
+            </div>
+            <div class="card col-9 hide">
+                <div class="card-body">
+                    <h3 class="city" id="city"></h3>
+                    <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
+                    <p class="card-text" id="temperature"></p>
+                    <p class="card-text" id="humidity"></p>
+                    <p class="card-text" id="windSpeed"></p>
+                    <p class="card-text" id="uvIndex"></p>
+                    <h2 class="card-text" id="5dayForecast"></h2>
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body" style="background-color: blue; color: white;">
+                                <h6 class="card-title" id="day1Date"></h6>
+                                <p class="card-text" id="day1Temp"></p>
+                                <p class="card-text" id="day1Humidity"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color: blue; color: white;">
+                                <h6 class="card-title" id="day2Date"></h6>
+                                <p class="card-text" id="day2Temp"></p>
+                                <p class="card-text" id="day2Humidity"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color: blue; color: white;">
+                                <h6 class="card-title" id="day3Date"></h6>
+                                <p class="card-text" id="day3Temp"></p>
+                                <p class="card-text" id="day3Humidity"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color: blue; color: white;">
+                                <h6 class="card-title" id="day4Date"></h6>
+                                <p class="card-text" id="day4Temp"></p>
+                                <p class="card-text" id="day4Humidity"></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body" style="background-color: blue; color: white;">
+                                <h6 class="card-title" id="day5Date"></h6>
+                                <p class="card-text" id="day5Temp"></p>
+                                <p class="card-text" id="day5Humidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
