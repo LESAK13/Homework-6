@@ -8,7 +8,7 @@ function weatherLog() {
     $(".hide").removeClass("hide");
     
     var citySearch = $("#cityInput").val().trim();
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&APPID=826819847ef13c18ce5df3994cc73722";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&APPID=826819847ef13c18ce5df3994cc73722";
 
     $.ajax({
         url: queryURL,
@@ -70,7 +70,7 @@ function weatherLog2() {
     $(".hide").removeClass("hide");
     var citySearch = $(this).attr("data-name");
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&APPID=826819847ef13c18ce5df3994cc73722";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&APPID=826819847ef13c18ce5df3994cc73722";
 
     $.ajax({
         url: queryURL,
